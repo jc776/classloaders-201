@@ -1,4 +1,4 @@
-The [https://nrepl.org/nrepl/usage/misc.html|nREPL docs] say that "hot-loading" dependencies with e.g. pomegranate should work in `clj`.
+The [nREPL docs](https://nrepl.org/nrepl/usage/misc.html) say that "hot-loading" dependencies with e.g. pomegranate should work in `clj`.
 
 In `lein`, this doesn't immediately work:
 ```
@@ -27,7 +27,7 @@ Versions:
 - Lein 2.8.3 (nREPL 0.5.3)
 - see project.clj
 
-I was able to get this to work by bringing back [https://github.com/cemerick/pomegranate/pull/102|this change] to pomegranate - this one was closed as unnecessary due to the [https://github.com/nrepl/nrepl/pull/35|corresponding change] in nREPL. Example:
+I was able to get this to work by bringing back [cemerick/pomegranate#102](https://github.com/cemerick/pomegranate/pull/102) - this one was closed as unnecessary due to [nrepl/nrepl#35](https://github.com/nrepl/nrepl/pull/35). Example:
 ```
 PS C:\Users\Jack\SSD\Projects\classloaders-201> lein repl
 nREPL server started on port 53166 on host 127.0.0.1 - nrepl://127.0.0.1:53166
